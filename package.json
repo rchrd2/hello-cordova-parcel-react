@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/js/index.js --out-dir=www",
+    "build": "parcel build src/js/index.js --out-dir=www/dist --public-url=/dist",
+    "watch": "parcel watch src/js/index.js --out-dir=www/dist --public-url=/dist",
     "dev": "cordova run browser"
   },
   "keywords": [
